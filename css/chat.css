@@ -1,5 +1,14 @@
+.header-wrapper {
+    background-color: white;
+    padding: 10px 0px;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+}
+
 .chats-body {    
-    padding: 0px;
+    padding: 10px 0px;
+    padding-top: 100px;
 }
 
 .chats-body .header,
@@ -7,9 +16,9 @@
     padding: 0px 20px;
 }
 
-.chats-screen {
+.chats-body {
     background-image: url("../images/halftone-yellow.png");
-    min-height: 100vh;
+    min-height: 1000vh;
 }
 
 .chat__write {
@@ -99,6 +108,7 @@
     padding: 10px 10px;
     border-radius: 20px;
     width: 110%;
+    display: block;
 }
 
 .incoming-message .message__author {
