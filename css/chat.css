@@ -4,6 +4,10 @@
     top: 0px;
     width: 100%;
     position: fixed;
+    z-index: 2;
+    box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025);
+
+
 }
 
 .chats-body {    
@@ -74,8 +78,7 @@
 
 .chat__write:focus {
     outline: none;
-    width: 80%;
-    
+    width: 80%;    
     transform: translateY(-100px);
     border-radius: 40px;
     box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025);
@@ -139,10 +142,22 @@
     align-self: flex-start;
 }
 
+@keyframes spin {
+    from{
+        tranform: none;
+    }
+    to{
+        transform: rotateY(1turn);
+    }
+}
+
 .incoming-message img {
     width: 30px;
     border-radius: 15px;
     margin-right: 20px;
+    animation: spin 1s linear infinite;
+    box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025);
+
 }
 
 .sent-message {
